@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- title -->
+    <title>Charles's Point of Sale System</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <!-- User can select from 3 items, and enter their desired quantity, and the 
+            program will output this info and total info to screen -->
+        <h1>Charles's Point of Sale System</h1>
+        <p>This is a point of sale program for a store selling spring clothes.</p>
+        <ul>
+            <li>Product 1. An umbrella cost $14.99.</li>
+            <li>Product 2. A rain coat cost $119.99.</li>
+            <li>Product 3. A swimsuit cost $40.00.</li>
+        </ul>
+        <form action="javascript:calculateTotals()" name="clothesForm">
+            Enter the item: <select name="item">
+                <option value="Umbrella">Umbrella</option>
+                <option value="Rain Coat">Rain Coat</option>
+                <option value="Swimsuit">Swimsuit</option>
+            </select>
+            <p></p>
+            Enter the quantity: <input type="text" name="quantity">
+            <p></p>
+            <input type="submit" value="Add this item to the purchase order">
+        </form>
+        <p></p>
+        <div id="umbrella"></div>
+        <div id="raincoat"></div>
+        <div id="swimsuit"></div><br>
+        <div id="results">No items selected yet. Please begin shopping.</div><br>
+
+        <!--footer with hyperlink, year, and name-->
+        <footer>
+            <br>All Photos taken from <a href="https://www.unsplash.com">Unsplash</a>
+            <br>&copy;2021 Charles Owens
+        </footer>
+    </div>
+</body>
+
+</html>
